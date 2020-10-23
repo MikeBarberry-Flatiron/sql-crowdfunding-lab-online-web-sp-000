@@ -1,5 +1,5 @@
 CREATE TABLE projects
-  project_id INTEGER
+  id INTEGER
   title TEXT,
   category TEXT,
   funding_goal INTEGER,
@@ -8,7 +8,7 @@ CREATE TABLE projects
 );
 
 CREATE TABLE user
-  user_id INTEGER,
+  id INTEGER,
   name TEXT,
   age INTEGER
 );
