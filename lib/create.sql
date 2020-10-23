@@ -1,5 +1,5 @@
 CREATE TABLE projects
-  project_id INTEGER  
+  project_id INTEGER
   title TEXT,
   category TEXT,
   funding_goal INTEGER,
@@ -17,4 +17,4 @@ CREATE TABLE pledge
   amount INTEGER,
   user_id INTEGER,
   project_id INTEGER
-); 
+);
