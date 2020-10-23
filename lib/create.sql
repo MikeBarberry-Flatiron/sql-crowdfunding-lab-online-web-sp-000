@@ -10,3 +10,9 @@ CREATE TABLE user
   name TEXT,
   age INTEGER
 ); 
+
+CREATE TABLE pledge
+  amount INTEGER,
+  user_id INTEGER,
+  project_id INTEGER
+); 
