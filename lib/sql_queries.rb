@@ -16,10 +16,11 @@ def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_
 end
 
 def selects_the_user_name_age_and_pledge_amount_for_all_pledges_alphabetized_by_name
-  "SELECT Users.name, Users.age, Pledges.amount,
-  FROM users, pledges
+  "SELECT Users.name, Users.age,
+  FROM users
   JOIN pledges
-  ORDER BY USERS.name;"
+  ON User_id = Pledges.user_id
+  GROUP BY Users.name;"
 end
 
 def selects_the_titles_and_amount_over_goal_of_all_projects_that_have_met_their_funding_goal
