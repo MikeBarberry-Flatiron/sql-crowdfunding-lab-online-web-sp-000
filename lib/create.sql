@@ -9,7 +9,7 @@ CREATE TABLE projects
 CREATE TABLE user
   name TEXT,
   age INTEGER
-); 
+);
 
 CREATE TABLE pledge
   amount INTEGER,
